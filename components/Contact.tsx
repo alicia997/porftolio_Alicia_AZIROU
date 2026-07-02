@@ -138,14 +138,7 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Footer */}
-        <Reveal delay={0.5}>
-        <div className="mt-32 flex justify-center border-t border-border pt-10">
-            <p className="text-sm text-foreground-muted">
-              © {new Date().getFullYear()} Alicia Azirou — Tous droits réservés.
-            </p>
-          </div>
-        </Reveal>
+        
       </div>
     </section>
   );
