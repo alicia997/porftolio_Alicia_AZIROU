@@ -22,7 +22,7 @@ export default function Contact() {
                 Contact
               </span>
             </Reveal>
-            <h2 className="mt-4 font-display text-[clamp(2rem,5vw,4rem)] font-semibold leading-tight tracking-tight text-foreground">
+            <h2 className="mt-4 font-display text-[clamp(2rem,5vw,4rem)] font-semibold leading-tight tracking-tight text-foreground dark:text-accent">
               <TextReveal text="Travaillons" />
               <br />
               <TextReveal text="ensemble." delay={0.15} />
