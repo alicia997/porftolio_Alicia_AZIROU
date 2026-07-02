@@ -5,10 +5,10 @@ import { Counter, Reveal, easeOutExpo } from "./lib/animations";
 
 const stats = [
   { value: 2, suffix: " ans", label: "chez EDF", sublabel: "Marketing Digital & RSE" },
-  { value: 2, suffix: " ans", label: "chez Manpower", sublabel: "Expérience marketing" },
+  { value: 2, suffix: " ans", label: "chez Manpower", sublabel: "Business Developer" },
   { value: 2, suffix: <sup>e</sup>, label: "HackAudit", sublabel: "Station F — IA & Audit" },
   {  value: "+20", label: "projets réalisés", sublabel: "Digital & Business" },
-  { value: "+1000", label: "collaborateurs", sublabel: "accompagnés en formation" },
+  { value: "+1000", label: "collaborateurs", sublabel: "Accompagnés en formation" },
 ];
 
 export default function Stats() {
