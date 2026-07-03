@@ -6,7 +6,7 @@ import { Reveal, TextReveal, Magnetic, easeOutExpo } from "./lib/animations";
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative bg-[#F8F5F1] pt-16 pb-8 lg:pt-20 lg:pb-10">
+    <section id="contact" className="relative bg-[#F8F5F1] dark:bg-background pt-16 pb-8 lg:pt-20 lg:pb-10">
       {/* Background orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="animate-gradient-shift absolute top-0 left-1/4 h-[400px] w-[400px] rounded-full bg-accent/10 blur-[120px]" />

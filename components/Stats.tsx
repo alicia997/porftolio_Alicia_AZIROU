@@ -7,8 +7,8 @@ const stats = [
   { value: 2, suffix: " ans", label: "chez EDF", sublabel: "Marketing Digital & RSE" },
   { value: 2, suffix: " ans", label: "chez Manpower", sublabel: "Business Developer" },
   { value: 2, suffix: <sup>e</sup>, label: "HackAudit", sublabel: "Station F — IA & Audit" },
-  {  value: "+20", label: "projets réalisés", sublabel: "Digital & Business" },
-  { value: "+1000", label: "collaborateurs", sublabel: "Accompagnés en formation" },
+  {  value: "+35", label: "projets réalisés", sublabel: "Digital & Business" },
+  { value: "+100", label: "collaborateurs", sublabel: "Accompagnés en formation" },
 ];
 
 export default function Stats() {
