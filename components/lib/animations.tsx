@@ -98,8 +98,8 @@ export function TextReveal({
 }
 
 interface CounterProps {
-  to: number;
-  suffix?: string;
+  to: string | number;
+  suffix?: string | ReactNode;
   duration?: number;
   className?: string;
 }
@@ -108,13 +108,18 @@ export function Counter({ to, suffix = "", duration = 2, className = "" }: Count
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-40px" });
   const [count, setCount] = useState(0);
+  
+  // Check if the original value had a "+" prefix
+  const hasPlus = typeof to === 'string' && to.startsWith('+');
+  // Convert string to number if needed
+  const numValue = typeof to === 'string' ? parseInt(to.replace(/\D/g, ''), 10) : to;
 
   useEffect(() => {
     if (!inView) return;
     
     // If duration is 0, set count immediately
     if (duration === 0) {
-      setCount(to);
+      setCount(numValue);
       return;
     }
     
@@ -124,16 +129,17 @@ export function Counter({ to, suffix = "", duration = 2, className = "" }: Count
       if (startTime === null) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
       const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.floor(eased * to));
+      setCount(Math.floor(eased * numValue));
       if (progress < 1) requestAnimationFrame(animate);
-      else setCount(to);
+      else setCount(numValue);
     };
 
     requestAnimationFrame(animate);
-  }, [inView, to, duration]);
+  }, [inView, numValue, duration]);
 
   return (
     <span ref={ref} className={className}>
+      {hasPlus && '+'}
       {count}
       {suffix}
     </span>
