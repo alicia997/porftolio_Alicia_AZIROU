@@ -153,7 +153,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1, ease: easeOutExpo }}
-            className="mt-6 flex flex-wrap justify-center gap-2"
+            className="mt-6 hidden flex-wrap justify-center gap-2 md:flex"
           >
             {badges.map((badge, i) => (
               <motion.span
