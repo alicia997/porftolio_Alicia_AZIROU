@@ -118,7 +118,7 @@ export default function About() {
                   <h4 className="mt-2 font-display text-xl font-semibold text-foreground">
                     {item.title}
                   </h4>
-                  <p className="mt-1 text-sm font-medium text-foreground-muted">
+                  <p className="mt-1 text-sm font-semibold text-accent">
                     {item.place}
                   </p>
                   <ul className="mt-3 space-y-2">
