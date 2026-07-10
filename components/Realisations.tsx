@@ -17,14 +17,14 @@ const achievements = [
     description:
       "Amélioration du tunnel de conversion grâce à un design centré utilisateur et une navigation simplifiée.",
     image: "/Canopee.jpg",
-    url: "#",
+    url: "/canopee",
   },
   {
     title: "Formation digitale",
     description:
       "Accompagnement de plus de 100 collaborateurs sur les outils digitaux, le marketing et la transformation.",
     image: "/Goboost.jpg",
-    url: "#",
+    url: "/goboost",
   },
 ];
 
@@ -52,7 +52,12 @@ export default function Realisations() {
                 whileHover={{ y: -8, scale: 1.02 }}
                 className="group rounded-3xl border border-border bg-surface/60 p-6 shadow-2xl shadow-accent/5 transition-all hover:border-accent/30 hover:shadow-accent/20"
               >
-                <div className="overflow-hidden rounded-3xl border border-border bg-surface">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block overflow-hidden rounded-3xl border border-border bg-surface transition hover:shadow-xl"
+                >
                   <Image
                     src={item.image}
                     alt={`Aperçu de ${item.title}`}
@@ -61,17 +66,7 @@ export default function Realisations() {
                     loading="eager"
                     className="h-[280px] sm:h-[320px] w-full object-cover"
                   />
-                </div>
-                <div className="mt-6 flex justify-end">
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex rounded-full border border-accent bg-accent/5 px-5 py-3 text-sm font-semibold text-accent transition hover:bg-accent/10"
-                  >
-                    Voir le projet
-                  </a>
-                </div>
+                </a>
               </motion.div>
             );
           })}

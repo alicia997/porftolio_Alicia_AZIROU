@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f4f7ff 0%, #ffffff 100%);
+  color: #0f172a;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(15, 23, 42, 0.04);
+  border-radius: 24px;
+  padding: 18px 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.brand-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: #38bdf8;
+}
+
+.fullscreen-button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 9999px;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.prototype-wrapper {
+  margin-top: 24px;
+  min-height: 620px;
+  border-radius: 32px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+}
+
+.loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.spinner {
+  width: 52px;
+  height: 52px;
+  border-radius: 9999px;
+  border: 6px solid #dbeafe;
+  border-top-color: #2563eb;
+  animation: spin 1s linear infinite;
+}
+
+iframe {
+  width: 100%;
+  height: 720px;
+  border: none;
+  display: block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

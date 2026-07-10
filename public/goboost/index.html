@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prototype GoBoost intégré depuis Figma" />
+  <title>GoBoost — Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="toolbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">G</span>
+        <div class="brand-text">
+          <strong>GoBoost</strong>
+          <span>Prototype interactif</span>
+        </div>
+      </div>
+
+      <button
+        class="fullscreen-button"
+        id="fullscreenButton"
+        type="button"
+        aria-label="Afficher le prototype en plein écran"
+      >
+        Plein écran
+      </button>
+    </header>
+
+    <section class="prototype-wrapper" id="prototypeWrapper">
+      <div class="loader" id="loader" role="status" aria-live="polite">
+        <div class="spinner" aria-hidden="true"></div>
+        <p>Chargement de GoBoost…</p>
+      </div>
+
+      <iframe
+        id="figmaPrototype"
+        title="Prototype Figma GoBoost"
+        src="https://embed.figma.com/proto/5wD7PPq6ssaAucy0DQEvDZ/GoBoost?node-id=69-1790&p=f&scaling=min-zoom&content-scaling=fixed&page-id=10%3A604&embed-host=share"
+        allowfullscreen
+        loading="eager"
+      ></iframe>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
