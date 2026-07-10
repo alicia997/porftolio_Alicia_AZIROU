@@ -9,7 +9,7 @@ const achievements = [
     title: "Campagne digitale",
     description:
       "Mise en place d'une stratégie de contenu et d'automatisation pour augmenter l'engagement de 35%.",
-    image: "/Lanepp.jpg",
+    image: "/LanepHackAudit.jpg",
     url: "https://lanep-web.vercel.app/",
   },
   {
