@@ -23,9 +23,10 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.95]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 120]);
+  const opacity = useTransform(scrollYProgress, [0, 0.9], [1, 0.9]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.98]);
+  const descriptionOpacity = useTransform(scrollYProgress, [0, 0.9], [1, 0.95]);
 
   const scrollTo = (href: string) => {
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
@@ -130,6 +131,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: easeOutExpo }}
+            style={{ opacity: descriptionOpacity }}
             className="mx-auto mt-8 max-w-4xl space-y-4 text-justify text-base leading-relaxed text-foreground-muted lg:text-lg"
           >
             <p>
