@@ -50,22 +50,24 @@ export default function Realisations() {
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.7, delay: index * 0.12, ease: easeOutExpo }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                className="group rounded-3xl border border-border bg-surface/60 p-6 shadow-2xl shadow-accent/5 transition-all hover:border-accent/30 hover:shadow-accent/20"
+                className="group rounded-3xl bg-surface/60 p-6 shadow-2xl shadow-accent/5 transition-all hover:shadow-accent/20"
               >
                 <a
                   href={item.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="block overflow-hidden rounded-3xl border border-border bg-surface transition hover:shadow-xl"
+                  className="block overflow-hidden rounded-3xl bg-surface transition hover:shadow-xl"
                 >
-                  <Image
-                    src={item.image}
-                    alt={`Aperçu de ${item.title}`}
-                    width={1200}
-                    height={720}
-                    loading="eager"
-                    className="h-[280px] sm:h-[320px] w-full object-cover"
-                  />
+                  <div className="flex h-[280px] items-center justify-center overflow-hidden bg-transparent sm:h-[320px]">
+                    <Image
+                      src={item.image}
+                      alt={`Aperçu de ${item.title}`}
+                      width={1200}
+                      height={720}
+                      loading="eager"
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
                 </a>
               </motion.div>
             );
