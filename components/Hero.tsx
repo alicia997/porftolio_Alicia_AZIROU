@@ -197,8 +197,8 @@ export default function Hero() {
 
             <Magnetic>
             <a
-  href="/cvAliciaAZIROU1.pdf"
-  download="cvAliciaAZIROU1.pdf"
+  href="/cvAliciaAZIROU.pdf"
+  download="cvAliciaAZIROU.pdf"
   className="flex items-center gap-2 rounded-full border border-border px-6 py-3.5 text-sm font-medium text-foreground-muted transition-all hover:border-accent/40 hover:text-foreground"
 >
   <Download className="h-4 w-4" />

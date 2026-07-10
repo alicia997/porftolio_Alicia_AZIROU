@@ -111,8 +111,8 @@ export default function Contact() {
             >
               <Magnetic strength={0.15}>
                 <motion.a
-                  href="/cvAliciaAZIROU1.pdf"
-                  download="cvAliciaAZIROU1.pdf"
+                  href="/cvAliciaAZIROU.pdf"
+                  download="cvAliciaAZIROU.pdf"
                   whileHover={{ x: 8, scale: 1.02 }}
                   className="group flex items-center justify-between rounded-2xl border border-border bg-surface p-6 transition-all hover:border-accent/30 hover:shadow-xl"
                 >
