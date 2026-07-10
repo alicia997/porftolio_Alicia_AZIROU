@@ -10,6 +10,7 @@ const navItems = [
   { label: "Expériences", href: "#apropos" },
   { label: "Diplômes et formations", href: "#formation" },
   { label: "Compétences", href: "#competences" },
+  { label: "Mes réalisations", href: "#realisations" },
   { label: "Chiffres clés", href: "#stats" },
   { label: "Contact", href: "#contact" },
 ];
