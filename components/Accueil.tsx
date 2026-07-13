@@ -8,14 +8,6 @@ import { TextReveal, Magnetic, easeOutExpo } from "./lib/animations";
 import { MapPin } from "lucide-react";
 
 
-const badges = [
-  "Marketing Digital",
-  "Transformation Digitale",
-  "Gestion de Projet",
-  "Performance Business",
-  "Formation Digitale",
-];
-
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
@@ -26,7 +18,6 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], [0, 120]);
   const opacity = useTransform(scrollYProgress, [0, 0.9], [1, 0.9]);
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.98]);
-  const descriptionOpacity = useTransform(scrollYProgress, [0, 0.9], [1, 0.95]);
 
   const scrollTo = (href: string) => {
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
@@ -123,15 +114,12 @@ export default function Hero() {
   <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
     Qui suis-je ?
   </h2>
-
-  <div className="mt-5 h-1 w-20 rounded-full bg-accent/80" />
 </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: easeOutExpo }}
-            style={{ opacity: descriptionOpacity }}
             className="mx-auto mt-8 max-w-4xl space-y-4 text-justify text-base leading-relaxed text-foreground-muted lg:text-lg"
           >
             <p>
@@ -151,27 +139,6 @@ export default function Hero() {
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1, ease: easeOutExpo }}
-            className="mt-6 hidden flex-wrap justify-center gap-2 md:flex"
-          >
-            {badges.map((badge, i) => (
-              <motion.span
-                key={badge}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: 1.2 + i * 0.1 }}
-                whileHover={{ y: -2 }}
-                className="rounded-full border border-border bg-surface/50 px-4 py-1.5 text-xs font-medium text-foreground-muted backdrop-blur-sm transition-colors hover:border-accent/40 hover:text-foreground"
-              >
-                {badge}
-              </motion.span>
-            ))}
-          </motion.div>
-
-        <hr/>
         </div>
       </motion.div>
     </section>
