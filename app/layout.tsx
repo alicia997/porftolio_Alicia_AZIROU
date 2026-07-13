@@ -52,13 +52,25 @@ export default function RootLayout({
       className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.classList.add('dark')}else{document.documentElement.classList.remove('dark')}}catch(e){}})()`,
-          }}
-        />
-      </head>
+     <head>
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        (function () {
+          try {
+            var theme = localStorage.getItem("theme");
+
+            document.documentElement.classList.remove("dark");
+
+            if (theme === "dark") {
+              document.documentElement.classList.add("dark");
+            }
+          } catch (error) {}
+        })();
+      `,
+    }}
+  />
+</head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
         <Footer />
