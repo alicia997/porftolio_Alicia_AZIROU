@@ -95,6 +95,7 @@ body {
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid var(--glass-border);
+  will-change: backdrop-filter;
 }
 
 /* Noise texture overlay */
@@ -124,6 +125,19 @@ body {
 
 .animate-gradient-shift {
   animation: gradient-shift 20s ease-in-out infinite;
+  /* Promote to its own compositing layer to avoid main-thread paints on Safari */
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+/* Utility to hint the browser to use GPU for transform animations */
+.will-change-transform {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 }
 
 /* Marquee animation */
@@ -172,4 +186,19 @@ body {
 /* Section anchor offset for fixed nav */
 section[id] {
   scroll-margin-top: 80px;
+}
+
+/* Safari / WebKit specific performance tweaks */
+@supports (-webkit-appearance: none) {
+  /* Reduce heavy blur on animated orbs to avoid main-thread freezes */
+  .animate-gradient-shift {
+    /* override utility blur values from Tailwind where present */
+    filter: blur(60px) !important;
+  }
+
+  /* Reduce backdrop-filter pressure for glass components */
+  .glass {
+    -webkit-backdrop-filter: blur(10px) saturate(140%);
+    backdrop-filter: blur(10px) saturate(140%);
+  }
 }
