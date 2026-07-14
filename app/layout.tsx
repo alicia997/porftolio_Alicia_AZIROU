@@ -39,6 +39,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alicia Azirou | Portfolio",
+    description:
+      "Portfolio de Alicia Azirou, Chargée de Marketing Digital & Formation RSE chez EDF.",
+  },
 };
 
 export default function RootLayout({
