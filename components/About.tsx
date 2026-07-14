@@ -7,7 +7,7 @@ import { Reveal, easeOutExpo } from "./lib/animations";
 const experiences = [
   {
     period: "2024 — 2026 (2 ans)",
-    title: "Chargée Marketing Digital et Formation RSE",
+    title: "Chargée de Marketing Digital et Formation RSE",
     place: "EDF, Paris",
     description: [
       "Conception d'outils digitaux et modules de sensibilisation",

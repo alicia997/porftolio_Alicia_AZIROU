@@ -19,7 +19,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Alicia Azirou — Digital Marketing & Business Specialist",
   description:
-    "Chargée Marketing Digital & Formation RSE chez EDF. J'imagine, pilote et optimise des projets digitaux qui créent de la valeur pour les organisations et améliorent l'expérience des utilisateurs.",
+    "Chargée de Marketing Digital & Formation RSE chez EDF. J'imagine, pilote et optimise des projets digitaux qui créent de la valeur pour les organisations et améliorent l'expérience des utilisateurs.",
   keywords: [
     "Alicia Azirou",
     "Marketing Digital",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Alicia Azirou — Digital Marketing & Business Specialist",
     description:
-      "Portfolio de Alicia Azirou, Chargée Marketing Digital & Formation RSE chez EDF.",
+      "Portfolio de Alicia Azirou, Chargée de Marketing Digital & Formation RSE chez EDF.",
     type: "website",
     locale: "fr_FR",
   },
