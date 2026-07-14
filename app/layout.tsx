@@ -38,6 +38,15 @@ export const metadata: Metadata = {
       "Portfolio de Alicia Azirou, Chargée de Marketing Digital & Formation RSE chez EDF.",
     type: "website",
     locale: "fr_FR",
+    url: "/",
+    images: [
+      {
+        url: "/opengraph-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio d’Alicia Azirou — Marketing digital, Data et gestion de projet",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
