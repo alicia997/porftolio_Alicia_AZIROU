@@ -14,7 +14,7 @@ const skills = [
       "Visual Studio Code",
       "Salesforce",
       "Power BI",
-      "Locker Studio",
+      "Looker Studio",
     ],
   },
   {
