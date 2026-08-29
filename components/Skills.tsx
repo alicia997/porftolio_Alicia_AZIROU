@@ -67,18 +67,11 @@ export default function Skills() {
             >
               <div className="mb-6 flex items-center justify-between gap-4 rounded-3xl border border-accent/10 bg-surface-2/90 p-5">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.4em] text-accent/90">
-                    {skill.title}
-                  </p>
                   <h3 className="mt-3 font-display text-3xl font-semibold text-foreground">
                     {skill.title}
                   </h3>
                 </div>
-                <div className="rounded-3xl bg-accent/10 p-4 text-accent">
-                  <span className="text-sm font-bold">{skill.subtitle}</span>
-                </div>
               </div>
-
               <ul className="grid gap-3 text-sm text-foreground-muted md:grid-cols-1 lg:grid-cols-1">
                 {skill.items.map((item) => (
                   <li
