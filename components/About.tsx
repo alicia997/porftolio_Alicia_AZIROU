@@ -6,8 +6,20 @@ import { Reveal, easeOutExpo } from "./lib/animations";
 
 const experiences = [
   {
+    period: "2026 (4 mois)",
+    title: "Chargée de Projet Digital & Formation",
+    place: "EDF — Paris Wagram, Direction Impact",
+    description: [
+      "Pilotage des projets digitaux de bout en bout",
+      "Exploitation des données de performance",
+      "Déploiement des parcours digitaux de formation",
+      "Conception des supports et contenus digitaux",
+      "Accompagnement du déploiement de nouvelles solutions",
+    ],
+  },
+  {
     period: "2024 — 2026 (2 ans)",
-    title: "Chargée de Marketing Digital et Formation RSE",
+    title: "Chargée de Marketing Digital et Formation",
     place: "EDF, Paris",
     description: [
       "Conception d'outils digitaux et modules de sensibilisation",

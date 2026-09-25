@@ -83,7 +83,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.75, ease: easeOutExpo }}
             className="mt-5 text-lg font-medium text-accent md:text-xl"
           >
-            Chargée de projet digital & formation RSE
+            Chargée de Projet Digital & Formation
           </motion.p>
           <motion.div
   initial={{ opacity: 0, y: 15 }}
@@ -123,14 +123,15 @@ export default function Hero() {
             className="mx-auto mt-8 max-w-4xl space-y-4 text-justify text-base leading-relaxed text-foreground-muted lg:text-lg"
           >
             <p>
-              Actuellement Chargée de  projet Digital & Formation RSE chez EDF,
-              j'accompagne le déploiement de projets digitaux, la conception de
-              dispositifs de formation innovants et le développement de
-              stratégies de communication interne.
+              Chargée de projet Digital & Formation chez EDF, j'accompagne le
+              déploiement de projets digitaux, la conception de dispositifs de
+              formation innovants et le développement de stratégies de
+              communication interne.
             </p>
             <p>
               Diplômée d'EPITECH, je suis spécialisée en marketing digital,
-              performance business, transformation digitale et gestion de projet.
+              performance business, transformation digitale et gestion de
+              projet.
             </p>
             <p>
               Mon approche combine vision stratégique, créativité, analyse des

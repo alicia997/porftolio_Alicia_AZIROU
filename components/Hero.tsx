@@ -9,11 +9,12 @@ import { MapPin } from "lucide-react";
 
 
 const badges = [
-  "Marketing Digital",
-  "Transformation Digitale",
-  "Gestion de Projet",
-  "Performance Business",
-  "Formation Digitale",
+  "Pilotage de projet",
+  "Digital",
+  "Formation",
+  "Data",
+  "Contenus digitaux",
+  "Transformation",
 ];
 
 export default function Hero() {
@@ -91,7 +92,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.75, ease: easeOutExpo }}
             className="mt-5 text-lg font-medium text-accent md:text-xl"
           >
-            Chargée de Marketing Digital & Formation RSE
+            Chargée de Projet Digital & Formation
           </motion.p>
           <motion.div
   initial={{ opacity: 0, y: 15 }}
@@ -133,19 +134,19 @@ export default function Hero() {
             className="mx-auto mt-8 max-w-4xl space-y-4 text-justify text-base leading-relaxed text-foreground-muted lg:text-lg"
           >
             <p>
-              Actuellement Chargée de Marketing Digital & Formation RSE chez EDF,
-              j'accompagne le déploiement de projets digitaux, la conception de
-              dispositifs de formation innovants et le développement de
-              stratégies de communication interne.
+              Chargée de Projet Digital & Formation, je pilote des projets
+              digitaux et accompagne la transformation digitale, de la
+              conception des contenus et parcours digitaux à leur déploiement.
             </p>
             <p>
-              Diplômée d'EPITECH, je suis spécialisée en marketing digital,
-              performance business, transformation digitale et gestion de projet.
+              Mon positionnement se situe à l'intersection de la gestion de
+              projet digital, de la formation, de l'analyse des données et du
+              reporting, en coordination avec les parties prenantes.
             </p>
             <p>
-              Mon approche combine vision stratégique, créativité, analyse des
-              données et orientation utilisateur afin de concevoir des solutions
-              digitales efficaces et mesurables.
+              Diplômée d'EPITECH, je mobilise ma connaissance du marketing
+              digital, de la performance business et de la transformation
+              digitale pour concevoir des solutions efficaces et mesurables.
             </p>
           </motion.div>
 

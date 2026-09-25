@@ -17,25 +17,25 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Alicia Azirou — Digital Marketing & Business Specialist",
+  title: "Alicia Azirou — Chargée de Projet Digital & Formation",
   description:
-    "Chargée de Marketing Digital & Formation RSE chez EDF. J'imagine, pilote et optimise des projets digitaux qui créent de la valeur pour les organisations et améliorent l'expérience des utilisateurs.",
+    "Chargée de Projet Digital & Formation chez EDF. Je pilote des projets digitaux, conçois des contenus et parcours de formation et accompagne la transformation digitale.",
   keywords: [
     "Alicia Azirou",
-    "Marketing Digital",
+    "Projet Digital",
     "Transformation Digitale",
     "EDF",
     "Formation RSE",
     "Gestion de Projet",
     "EPITECH",
-    "Digital Marketing",
-    "Business Specialist",
+    "Chargée de Projet Digital",
+    "Formation Digitale",
   ],
   authors: [{ name: "Alicia Azirou" }],
   openGraph: {
-    title: "Alicia Azirou — Digital Marketing & Business Specialist",
+    title: "Alicia Azirou — Chargée de Projet Digital & Formation",
     description:
-      "Portfolio de Alicia Azirou, Chargée de Marketing Digital & Formation RSE chez EDF.",
+      "Portfolio de Alicia Azirou, Chargée de Projet Digital & Formation chez EDF.",
     type: "website",
     locale: "fr_FR",
     url: "/",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Alicia Azirou | Portfolio",
     description:
-      "Portfolio de Alicia Azirou, Chargée de Marketing Digital & Formation RSE chez EDF.",
+      "Portfolio de Alicia Azirou, Chargée de Projet Digital & Formation chez EDF.",
   },
 };
 
