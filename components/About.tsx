@@ -8,7 +8,7 @@ const experiences = [
   {
     period: "2026 (4 mois)",
     title: "Chargée de Projet Digital & Formation",
-    place: "EDF — Paris Wagram, Direction Impact",
+    place: "EDF, Paris Wagram, Direction Impact",
     description: [
       "Pilotage des projets digitaux de bout en bout",
       "Exploitation des données de performance",
