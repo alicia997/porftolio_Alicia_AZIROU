@@ -19,7 +19,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Alicia Azirou — Chargée de Projet Digital & Formation",
   description:
-    "Chargée de Projet Digital & Formation chez EDF. Je pilote des projets digitaux, conçois des contenus et parcours de formation et accompagne la transformation digitale.",
+    "Chargée de projet Digital & formation chez EDF. Je pilote des projets digitaux, conçois des contenus et parcours de formation et accompagne la transformation digitale.",
   keywords: [
     "Alicia Azirou",
     "Projet Digital",

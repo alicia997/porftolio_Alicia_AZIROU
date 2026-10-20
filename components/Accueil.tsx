@@ -123,7 +123,7 @@ export default function Hero() {
             className="mx-auto mt-8 max-w-4xl space-y-4 text-justify text-base leading-relaxed text-foreground-muted lg:text-lg"
           >
             <p>
-              Chargée de projet Digital & Formation chez EDF, j'accompagne le
+              Chargée de projet digital & formation chez EDF, j'accompagne le
               déploiement de projets digitaux, la conception de dispositifs de
               formation innovants et le développement de stratégies de
               communication interne.
